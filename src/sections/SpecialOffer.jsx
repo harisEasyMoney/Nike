@@ -1,5 +1,6 @@
 import { offer } from "../assets/images";
 import { Button } from "./Button";
+import { arrowRight } from "../assets/icons";
 
 const SpecialOffer = () => {
   return (
@@ -15,21 +16,22 @@ const SpecialOffer = () => {
       </div>
       <div className="flex flex-1 flex-col">
         <h2 className="font-palanquin text-4xl capitalize max-sm:text-[72px] max-sm:leading-[82px] font-bold lg:max-w-lg">
-          We Provide you
-          <span className="text-coral-red"> Super </span>
-          <span className="text-coral-red">Quality </span>
-          Shoes
+          <span className="text-coral-red"> Special </span>
+          <span className="text-coral-red">Offer </span>
         </h2>
         <p className="mt-4 lg:max-w-lg info-text">
-          Ensuring premium comfort and style, our meticulously crafted footwear
-          is designed to elevate your experience, providing you with unmatched
-          quality, innovation, and a touch of elegance.
+          Embark on Shopping journey that redefines your experience with
+          unbeatable deals. From premier selections to incredible savings. We
+          offer unparalled value that sets us apart
         </p>
         <p className="mt-6 lg:max-w-lg info-text">
-          Our dedication to detail and excellence ensures your satisfaction
+          Navigate a realm of possibilities designed to fulfil yout unique
+          desires surpassing the loftiest expectations. Your journey with us is
+          nothing short of exceptional.
         </p>
-        <div className="mt-11">
-          <Button label="View Details" />
+        <div className="flex gap-6 mt-11">
+          <Button label="Shop Now" iconUrl={arrowRight} />{" "}
+          <Button label="Learn more" white />
         </div>
       </div>
     </section>
